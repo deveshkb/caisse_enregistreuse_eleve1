@@ -38,8 +38,8 @@ int main()
     while (reste >= 100) { printf("1 billet de 100\n"); reste -= 100; }
     while (reste >= 50)  { printf("1 billet de 50\n");  reste -= 50;  }
     while (reste >= 25)  { printf("1 billet de 25\n");  reste -= 25;  }
-    while (reste >= 10)  { printf("1 billet de 10\n");  reste -= 10;  }
-    while (reste >= 5)   { printf("1 billet de 5\n");   reste -= 5;   }
+    while (reste >= 10)  { printf("1 piece de 10\n");  reste -= 10;  }
+    while (reste >= 5)   { printf("1 piece de 5\n");   reste -= 5;   }
     while (reste >= 1)   { printf("1 piece de 1\n");   reste -= 1;   }
 
     return 0;
