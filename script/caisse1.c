@@ -29,7 +29,6 @@ int main()
     monnaie = calcule_monnaie(montant, a_payer);
     printf("Monnaie a rendre : Rs%.2f\n", monnaie);
 
-    // Déterminer billets et pièces (forte valeur d'abord)
     int reste = (int)monnaie;
 
     printf("Billets a rendre :\n");
@@ -44,4 +43,30 @@ int main()
 
     return 0;
 }
+#include <stdio.h>
+#include <stdlib.h>
 
+int main()
+{
+    double a_payer;
+    double montant;
+
+    a_payer = (rand() % 150) + 50;
+
+    printf("Montant a payer : Rs%.2f\n", a_payer);
+
+    do {
+        printf("Entrez le montant que vous donnez : ");
+        scanf("%lf", &montant);
+
+        if (montant < a_payer) {
+            printf("Montant insuffisant. Donnez plus.\n");
+        }
+
+    } while (montant < a_payer);
+
+    printf("Paiement accepte.\n");
+    printf("Monnaie a rendre : Rs%.2f\n", montant - a_payer);
+
+    return 0;
+}
