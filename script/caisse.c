@@ -43,7 +43,8 @@ int main()
     while (reste >= 1)   { printf("1 piece de 1\n");   reste -= 1;   }
 
     return 0;
-}#include <stdio.h>
+}
+#include <stdio.h>
 #include <stdlib.h>
 
 int main()
